@@ -11,7 +11,7 @@ const cleanFileName = (filename: String) => {
 }
 
 /**
- * en la linea 20, el moduleRouter hace referencia al modulo de la ruta que se esta importando
+ * en la linea 22, el moduleRouter hace referencia al modulo de la ruta que se esta importando
  * lo que estamos captuando de la promesa
  * ponemos .router porque es lo que estamos importando del archivo que estamos capturando
  */

@@ -6,15 +6,16 @@ import {
     updateItem, 
     deleteItem 
 } from "../controllers/item";
+import { logMiddleware } from "../middlewares/log";
 
 const router = Router();
 /**
  * http/localhost:3002/items [GET]
  */
 
-router.get('/', getItems);
+router.get('/', logMiddleware ,getItems);
 
-router.get('/:id', getItem);
+router.get('/:id', logMiddleware, getItem);
 
 router.post('/', postItem);
 
