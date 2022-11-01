@@ -25,9 +25,10 @@ const loginUser = async ({email, password}: Auth) => {
     if(!isCorrect) return "PASSWORD_INCORRECT"
 
 
-    const token = generateToken(userExist.email);
+    const token = await generateToken(userExist.email);
+    // generateToken devuelve una promesa
     const data = {
-        token: token, 
+        token: token,
         user: userExist,
     }
     return data
