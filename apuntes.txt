@@ -1,1 +1,32 @@
 Los Headers son una 
+
+middleware de la sesion
+
+Instalamos 
+npm i bcryptjs --> para encriptar la contraseña del usuario
+npm i jsonwebtoken
+
+necesitamos instalar sus tipados
+
+npm i @types/bcryptjs @types/jsonwebtoken -D
+
+
+Ahora cremos las rutas de autenticación
+
+en un nuevo archivo de routes: 
+router.post("/register", );
+router.post("/login");
+
+en un nuevo archivo de controllers:
+registerCtrl
+loginCtrl 
+
+en un nuevo archivo de services
+auth.ts // donde estan las dos funciones de logica del negocio: 
+loginUser
+registerNewUser
+
+Ahora creamos el modelo usuario
+Luego comprobamos si existe el usuario
+Si no existe lo creamos
+
